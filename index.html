@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Surprise Greeting Card</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+  <div class="card">
+    <div id="question" style="display: block;">
+      <h1>Welcome to the Surprise!</h1>
+      <p>Answer the following question to reveal your gift:</p>
+      
+      <p>What is the name of my son?</p>
+      <input type="text" id="answer" placeholder="Your answer">
+      
+      <button onclick="checkAnswer()">Submit</button>
+    </div>
+    
+    <div id="surprise" style="display: none;">
+        <img src="giphy 2.gif" alt="Digital Flower" id="flower">
+        <p>Surprise! Hope you enjoy the digital flowers!</p>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+
+
+.card {
+  position: relative;
+  max-width: 600px;
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: url('giphy 6.gif') center/cover fixed;
+  /* Use a background image by replacing 'path-to-image.jpg' with the actual path of your image */
+  font-family: 'Arial', sans-serif;
+  color: #333; /* Text color */
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.greeting-card {
+  background: rgba(255, 255, 255, 0.8); /* Background color of the greeting card with opacity */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.heart {
+  position: absolute;
+  animation: float 2s infinite linear;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+#surprise {
+  display: none;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+#surprise:hover {
+  transform: translateY(-20px); /* Slide up by 20px when hovered */
+}
+
+#flower {
+  max-width: 100%;
+}
+
+p {
+  font-size: 16px;
+  margin: 10px 0;
+}  
